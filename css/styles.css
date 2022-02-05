@@ -32,13 +32,13 @@ a {
     align-items: center;
     flex-basis: 10rem;
 }
-.card-layout-3 {
+.grid-card-home-x3 {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-column-gap: 3rem;
     justify-content:space-between;
 }
-.card-layout-2 {
+.grid-card-home-x2 {
     display: grid;
     grid-template-columns: 48% 48%;
     grid-column-gap: 3rem;
@@ -442,6 +442,9 @@ textarea {
     grid-gap: 4rem 4rem;
 }
 /*spacing*/
+.gap-tb-item-025 {
+    margin: 0.25rem 0 0.25rem 0;
+}
 .spacing-item-1 {
     margin: 1rem 0rem 1rem 0rem;
 }
