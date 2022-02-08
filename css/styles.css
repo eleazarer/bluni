@@ -482,6 +482,15 @@ footer {
 }
 
 @media screen and (max-width:992px) {
+      nav ul {
+        background: rgb(255, 255, 255);
+
+    }
+      nav ul {
+        margin-top: 10rem;
+        display: flex;
+        flex-wrap:wrap;
+    }
     .container-hero{
         width: 100%;
     }   
@@ -565,7 +574,16 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+    nav ul {
+        background: rgb(255, 255, 255);
 
+    }
+      nav ul {
+        margin-top: 11rem;
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: column;
+    }
     .container-hero{
         width: 100%;
     }
