@@ -61,6 +61,7 @@ a {
 ul {
     list-style: none;
     display: flex;
+
 }
 li {
     padding: 1rem;
@@ -334,7 +335,7 @@ textarea {
     background-color: #5c0099;
 
 }
-.fa-piggy-bank {
+.fa-piggy-bank, .fa-shopping-basket {
     background-color: #06837f;
 }
 .fa-laugh-beam {
@@ -343,7 +344,7 @@ textarea {
 .fa-heart {
     background-color: #F56565;
 }
-.fa-globe-americas, .fa-leaf {
+.fa-globe-americas, .fa-leaf, .fa-pied-piper-pp {
     background-color: #2C9E4B;
 }
 .fa-star {
@@ -548,13 +549,15 @@ footer {
     .table-feature{
         padding-left: 2rem;
     }
+    .footer-box {
+        display: inline;
+    }
     footer {
         border-top-left-radius: 2rem;
         border-top-right-radius: 2rem;
     }
     .footer-box div {
         margin: 1rem;
-        display: block;
     }
     .card-wide a{
         display: inline; 
