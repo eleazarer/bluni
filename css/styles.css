@@ -407,7 +407,7 @@ textarea {
     object-fit: cover;
     object-position: 50% 50%;
 }
-.card-store {
+.card-store:hover {
     background-color: #fdfdfd;
     transform: translateY(-4px);
     transition: transform .2s;
