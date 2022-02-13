@@ -8,6 +8,8 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: #f7f7f7;
+    animation:fadeIn;
+    animation-duration: 1.2s;
 }
 a {
     text-decoration: none;
@@ -75,7 +77,8 @@ nav {
     width: 100%;
     position: fixed;
     padding: 1rem 8% 1rem 8%;
-    margin-bottom: 5rem;  
+    margin-bottom: 5rem;
+    z-index: 1;  
 }
 /*Hero home*/
 .hero-background-home {
@@ -366,14 +369,20 @@ textarea {
     text-align: center;
     border-radius: 1rem;
     overflow: hidden;
-    
+    transition: box-shadow, transform, 0.2s;
+    cursor: pointer;
 }
-
 .card-product img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     object-position: 50% 50%;
+}
+.card-product:hover {
+    background-color: #fdfdfd;
+    transform: translateY(-4px);
+    transition: transform .2s;
+    
 }
 .card-store {
     background-color: #fff;
