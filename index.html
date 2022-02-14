@@ -8,31 +8,49 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Inicio - Bluni</title>
 </head>
 <body>
     <header>
-        <nav>
-            <figure>
-                <a href="index.html"><img src="image/logo.svg" alt=""></a>
-            </figure>
-            <ul class="text-size-normal">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/planes.html">Planes</a></li>
-                <li><a href="pages/explorar.html">Explorar</a></li>
-                <li><a href="pages/nosotros.html">Personas</a></li>
-                <li><a href="pages/ayuda.html">Ayuda</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container-fluid">
+                <figure>
+                    <a href="../index.html"><img src="../image/logo.svg" alt=""></a>
+                </figure>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active fs-5" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fs-5" href="../pages/planes.html">Planes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fs-5" href="../pages/explorar.html">Explorar</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fs-5" href="../pages/nosotros.html">Personas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fs-5" href="../pages/ayuda.html">Ayuda</a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+        </nav> 
     </header>
-    <section class="hero-home hero-background-home">
+    <section class=" hero-home hero-background-home">
         <div class="container-hero">
             <h1 class="title-xl black-color">Un espacio para vender tus productos frescos</h1>
             <p class="text-size-normal black-color">Te ayudamos a que llegues a miles de personas con tus productos productos frescos.</p>
             <button class="button-primary"><a href="">Inicia de forma gratuita</a></button>
         </div>
     </section>
-    <section class="container grid-card-x3">
+    <section class="container-md grid-card-x3">
         <div class="card-features content-card">
             <i class="fas fa-star-of-life fa-2x gap-tb-item-1 icon"></i>
             <h2 class="title-s gap-tb-item-1 ">Sin intermediarios</h2>
@@ -50,7 +68,7 @@
         </div>
     </section>
     
-    <section class="container">
+    <section class="container-md">
         <div class="card-wide">
             <a href="pages/planes.html">
                 <div class="content-card">
@@ -63,7 +81,7 @@
             </a>
          </div>
     </section>
-    <section class="container grid-card-x2">
+    <section class="container-md grid-card-x2">
         <div class="card-mid">
             <a href="pages/planes.html">
                 <div class="content-card">
@@ -83,7 +101,7 @@
             </a>
          </div>
     </section>
-    <section class="container">
+    <section class="container-md">
         <div class="card-wide">
             <div class="content-card">
                 <h2 class="title gap-tb-item-1">Nuestros socios</h2>
@@ -98,7 +116,7 @@
        
     </section>
     <footer class="text-size-small">
-        <div class="container footer-box">
+        <div class="container-md footer-box">
             <div class="rrss text-size-small">
                 <a href="http://twitter.com" target="_blank"><span><i class="fab fa-twitter fa-1x"></i></span>  Twitter</a>
                 <a href="http://facebook.com" target="_blank"><span><i class="fab fa-facebook fa-1x"></i></span>  Facebook</a>
@@ -114,5 +132,6 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
