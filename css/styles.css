@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif !important;
     background-color: #f7f7f7 !important;
     animation:fadeIn;
     animation-duration: 1.2s;
@@ -31,6 +31,10 @@ footer a {
 .container-md{
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+.container-fluid {
+    margin-left: 8% !important;
+    margin-right: 8% !important;
 }
 .container-hero{
     width: 44%;
@@ -67,12 +71,12 @@ footer a {
     text-align: center;
 }
 /*Menu*/
- /* ul {
+  /* ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
 
-} */
+}  */
 li {
     padding: 0rem 0.5rem 0rem 0.5rem;
     text-align: center;
@@ -112,8 +116,8 @@ nav {
     background-size: cover;
     background-position: 100% 50%;
     border-radius: 0rem 0rem 6rem 6rem;
-    height: 20rem;
-    margin-top: 5rem;
+    height: 22rem;
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -516,6 +520,7 @@ footer {
 }
 
 @media screen and (max-width:992px) {
+    
     .container-hero{
         width: 100%;
     }   
