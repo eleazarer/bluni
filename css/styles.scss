@@ -1,28 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+$bluni: #FFB600;
+$primary: #005ccc;
+$critical: #F56565;
+$success: #2C9E4B;
+$decorative-1:#5c0099;
+$decorative-2: #06837f;
+$white: #ffffff;
+$gray-dark:#1d1d1d;
+$background:#f7f7f7;
+$bold: 600;
+$normal: 400;
 * {
     margin: 0%;
     padding: 0%;
 }
 body {
 	font-family: 'Inter', sans-serif !important;
-	background-color: #f7f7f7 !important;
+	background-color: $background !important;
 	animation: fadeIn;
 	animation-duration: 1.2s;
 }
 section {
 	a {
 		text-decoration: none !important;
-		color: #1d1d1d !important;
+		color: $gray-dark !important;
 		cursor: pointer;
 	}
 }
 footer {
 	a {
 		text-decoration: none !important;
-		color: #1d1d1d !important;
+		color: $gray-dark !important;
 		cursor: pointer;
 	}
-	background-color: #ffffff;
+	background-color: $white;
 	padding: 4rem 0rem 4rem 0rem;
 	border-top-left-radius: 6rem;
 	border-top-right-radius: 6rem;
@@ -79,7 +90,7 @@ nav {
 	border-radius: 0rem 0rem 6rem 6rem;
 	background-image: url(../image/hero-home-2.jpg);
 	background-position: 80% 50%;
-	background-color: #fff;
+	background-color: $white;
 	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.020);
 	background-size: 34%;
 	background-repeat: no-repeat;
@@ -118,58 +129,58 @@ nav {
 	}
 }
 .white-color {
-	color: #fff;
+	color: $white;
 }
 .black-color {
-	color: #2c2c2c;
+	color: $gray-dark;
 }
 .title {
 	font-size: 28px;
-	font-weight: 600;
+	font-weight: $bold;
 }
 .title-s {
 	font-size: 26px;
-	font-weight: 600;
+	font-weight: $bold;
 }
 .title-xl {
 	font-size: 42px;
-	font-weight: 600;
+	font-weight: $bold;
 }
 .subtitle {
 	font-size: 26px;
-	font-weight: 600;
+	font-weight: $bold;
 }
 .subtitle-s {
 	font-size: 22px;
-	font-weight: 600;
+	font-weight: $bold;
 }
 .text-size-normal {
 	font-size: 20px;
-	font-weight: 400;
+	font-weight: $normal;
 }
 .text-size-small {
 	font-size: 1rem;
-	font-weight: 400;
+	font-weight: $normal;
 }
 .text-size-small-bold {
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: $bold;
 }
 .text-caption {
 	font-size: 12px;
-	font-weight: 400;
+	font-weight: $normal;
 }
 .button-primary {
 	a {
 		text-decoration: none;
-		color: #ffffff !important;
+		color: $white !important;
 	}
 	width: 100%;
 	height: 3.25rem;
 	appearance: none;
-	background: #005ccc;
+	background: $primary;
 	border: 0.0063rem solid rgba(36, 36, 36, 0.007);
-	color: #ffffff;
+	color: $color-white;
 	border-radius: 0.8rem;
 	font-weight: 600;
 	font-size: 100%;
@@ -184,7 +195,7 @@ nav {
 	appearance: none;
 	background: rgba(255, 255, 255, 0);
 	border: 0rem solid #ffffff00;
-	color: #005ccc;
+	color: $primary;
 	border-radius: 0.5rem;
 	font-weight: 600;
 	font-size: 1.3rem;
@@ -198,15 +209,15 @@ nav {
 	height: 2rem;
 	appearance: none;
 	background: rgba(255, 255, 255, 0);
-	border: 0.1rem solid #005ccc;
-	color: #005ccc;
+	border: 0.1rem solid $primary;
+	color: $primary;
 	border-radius: 0.5rem;
 	font-weight: 600;
 	font-size: 1rem;
 	cursor: pointer;
 	&:hover {
-		background: #005ccc;
-		color: #fff;
+		background: $primary;
+		color: $white;
 	}
 }
 .flex {
@@ -219,7 +230,7 @@ table {
 	table-layout: fixed;
 	border-collapse: collapse;
 	border: 0rem solid#2c2c2c;
-	background: #fff;
+	background: $white;
 	border-radius: 1rem;
 }
 td {
@@ -248,16 +259,16 @@ th {
 	font-weight: 700;
 }
 .fa-check-circle {
-	color: #2C9E4B;
+	color: $success;
 }
 .fa-times-circle {
-	color: #F56565;
+	color: $critical;
 }
 .table-price {
 	text-align: center;
 }
 .card-wide {
-	background-color: #ffffff;
+	background-color: $white;
 	padding: 2rem;
 	border-radius: 1rem;
 	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.020);
@@ -272,14 +283,14 @@ th {
 	}
 }
 .card-mid {
-	background-color: #ffffff;
+	background-color: $white;
 	padding: 2rem;
 	border-radius: 1rem;
 	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.020);
 }
 .card-features {
 	padding: 2rem;
-	background-color: #ffffff;
+	background-color: $white;
 	border-radius: 1rem;
 	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.020);
 	display: inline;
@@ -291,41 +302,41 @@ th {
 .icon {
 	padding: 1rem;
 	border-radius: 1rem;
-	color: #fff;
+	color: $white;
 }
 .fa-star-of-life {
-	background-color: #5c0099;
+	background-color: $decorative-1;
 }
 .fa-piggy-bank {
-	background-color: #06837f;
+	background-color: $decorative-2;
 }
 .fa-shopping-basket {
-	background-color: #06837f;
+	background-color: $decorative-2;
 }
 .fa-laugh-beam {
-	background-color: #ffb600;
+	background-color: $bluni;
 }
 .fa-heart {
-	background-color: #F56565;
+	background-color: $critical;
 }
 .fa-globe-americas {
-	background-color: #2C9E4B;
+	background-color: $success;
 }
 .fa-leaf {
-	background-color: #2C9E4B;
+	background-color: $success;
 }
 .fa-star {
-	background-color: #FFB600;
+	background-color: $bluni;
 }
 .fa-seedling {
-	color: #2C9E4B;
+	color: $success;
 }
 .fa-lemon {
-	color: #FFB600;
+	color: $bluni;
 }
 .card-team {
 	padding: 2rem;
-	background-color: #ffffff;
+	background-color: $white;
 	text-align: center;
 	border-radius: 1rem;
 	img {
@@ -334,7 +345,7 @@ th {
 	}
 }
 .card-product {
-	background-color: #fff;
+	background-color: $white;
 	padding: 1rem;
 	text-align: center;
 	border-radius: 1rem;
@@ -354,7 +365,7 @@ th {
 	}
 }
 .card-store {
-	background-color: #fff;
+	background-color: $white;
 	padding: 2rem;
 	text-align: center;
 	border-radius: 1rem;
@@ -375,7 +386,7 @@ th {
 }
 .card-text {
 	padding: 4rem;
-	background-color: #ffffff;
+	background-color: $white;
 	text-align: center;
 	border-radius: 1rem;
 	margin-left: 1rem;
@@ -440,14 +451,14 @@ img {
 	color: #3b5998;
 }
 .fa-twitter {
-	color: rgb(29, 155, 240);
+	color: #1d9bf0;
 }
 .bluni-color {
 	img {
 		width: 0.8rem;
 	}
 	a {
-		font-weight: 600;
+		font-weight: $bold;
 		color: #303030;
 	}
 }
@@ -459,7 +470,7 @@ img {
 		border-radius: 2rem;
 		background-image: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.4)), url(/image/hero-home.jpg);
 		background-position: 50% 70%;
-		background-color: #fff;
+		background-color: $color-white;
 		box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.020);
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -545,7 +556,7 @@ img {
 		border-radius: 2rem;
 		background-image: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.4)), url(/image/hero-home.jpg);
 		background-position: 88% 50%;
-		background-color: #fff;
+		background-color: $color-white;
 		box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.020);
 		background-size: cover;
 		background-repeat: no-repeat;

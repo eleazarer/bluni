@@ -51,7 +51,7 @@ footer a {
 .grid-card-x2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr);
+  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[auto];
       grid-template-rows: repeat(auto, 1fr);
@@ -62,7 +62,7 @@ footer a {
   display: -ms-grid;
   display: grid;
   grid-area: container;
-  -ms-grid-columns: (1fr);
+  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[auto];
       grid-template-rows: repeat(auto, 1fr);
@@ -73,7 +73,7 @@ footer a {
   display: -ms-grid;
   display: grid;
   grid-area: container;
-  -ms-grid-columns: (1fr);
+  -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: (1fr)[auto];
       grid-template-rows: repeat(auto, 1fr);
@@ -101,7 +101,7 @@ nav {
   border-radius: 0rem 0rem 6rem 6rem;
   background-image: url(../image/hero-home-2.jpg);
   background-position: 80% 50%;
-  background-color: #fff;
+  background-color: #ffffff;
   -webkit-box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
           box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
   background-size: 34%;
@@ -156,11 +156,11 @@ nav {
 }
 
 .white-color {
-  color: #fff;
+  color: #ffffff;
 }
 
 .black-color {
-  color: #2c2c2c;
+  color: #1d1d1d;
 }
 
 .title {
@@ -268,7 +268,7 @@ nav {
 
 .button-secondary-small:hover {
   background: #005ccc;
-  color: #fff;
+  color: #ffffff;
 }
 
 .flex {
@@ -285,7 +285,7 @@ table {
   table-layout: fixed;
   border-collapse: collapse;
   border: 0rem solid #2c2c2c;
-  background: #fff;
+  background: #ffffff;
   border-radius: 1rem;
 }
 
@@ -381,7 +381,7 @@ th {
 .icon {
   padding: 1rem;
   border-radius: 1rem;
-  color: #fff;
+  color: #ffffff;
 }
 
 .fa-star-of-life {
@@ -397,7 +397,7 @@ th {
 }
 
 .fa-laugh-beam {
-  background-color: #ffb600;
+  background-color: #FFB600;
 }
 
 .fa-heart {
@@ -437,7 +437,7 @@ th {
 }
 
 .card-product {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 1rem;
   text-align: center;
   border-radius: 1rem;
@@ -469,7 +469,7 @@ th {
 }
 
 .card-store {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 2rem;
   text-align: center;
   border-radius: 1rem;
@@ -611,7 +611,7 @@ img {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.4))), url(/image/hero-home.jpg);
     background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4)), url(/image/hero-home.jpg);
     background-position: 50% 70%;
-    background-color: #fff;
+    background-color: #ffffff;
     -webkit-box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
             box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
     background-size: cover;
@@ -648,19 +648,19 @@ img {
     text-align: center;
   }
   .grid-card-x4 {
-    -ms-grid-columns: (1fr);
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
   .grid-card-x3 {
-    -ms-grid-columns: (1fr);
+    -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
   .grid-card-x2 {
-    -ms-grid-columns: (1fr);
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
   .grid-card-x2-1 {
-    -ms-grid-columns: (1fr);
+    -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
   .card-mid {
@@ -715,7 +715,7 @@ img {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.4))), url(/image/hero-home.jpg);
     background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4)), url(/image/hero-home.jpg);
     background-position: 88% 50%;
-    background-color: #fff;
+    background-color: #ffffff;
     -webkit-box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
             box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
     background-size: cover;
@@ -753,15 +753,15 @@ img {
     text-align: center;
   }
   .grid-card-x4 {
-    -ms-grid-columns: (1fr);
+    -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
   .grid-card-x3 {
-    -ms-grid-columns: (1fr);
+    -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
   .grid-card-x2 {
-    -ms-grid-columns: (1fr);
+    -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
   .card-wide {
