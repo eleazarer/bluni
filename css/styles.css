@@ -13,7 +13,7 @@ body {
           animation-duration: 1.2s;
 }
 
-section a {
+a, section, footer {
   text-decoration: none !important;
   color: #1d1d1d !important;
   cursor: pointer;
@@ -24,12 +24,6 @@ footer {
   padding: 4rem 0rem 4rem 0rem;
   border-top-left-radius: 6rem;
   border-top-right-radius: 6rem;
-}
-
-footer a {
-  text-decoration: none !important;
-  color: #1d1d1d !important;
-  cursor: pointer;
 }
 
 .container-md {
@@ -208,22 +202,25 @@ nav {
   font-weight: 400;
 }
 
-.button-primary {
+.button, .button-primary, .button-secondary, .button-secondary-small {
   width: 100%;
-  height: 3.25rem;
+  border-radius: 0.8rem;
+  font-weight: 600;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: #005ccc;
-  border: 0.0063rem solid rgba(36, 36, 36, 0.007);
-  color: white;
-  border-radius: 0.8rem;
-  font-weight: 600;
-  font-size: 100%;
   cursor: pointer;
 }
 
-.button-primary a {
+.button-primary {
+  height: 3.25rem;
+  font-size: 1.3rem;
+  background: #005ccc;
+  border: 0.0063rem solid rgba(36, 36, 36, 0.007);
+  color: white;
+}
+
+.button-primary a, .button-primary section, .button-primary footer {
   text-decoration: none;
   color: white !important;
 }
@@ -233,18 +230,11 @@ nav {
 }
 
 .button-secondary {
-  width: 100%;
   height: 3.25rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  font-size: 1.3rem;
   background: rgba(255, 255, 255, 0);
   border: 0rem solid #ffffff00;
   color: #005ccc;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  font-size: 1.3rem;
-  cursor: pointer;
 }
 
 .button-secondary:hover {
@@ -252,18 +242,11 @@ nav {
 }
 
 .button-secondary-small {
-  width: 100%;
   height: 2rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   background: rgba(255, 255, 255, 0);
   border: 0.1rem solid #005ccc;
   color: #005ccc;
-  border-radius: 0.5rem;
-  font-weight: 600;
   font-size: 1rem;
-  cursor: pointer;
 }
 
 .button-secondary-small:hover {
@@ -343,7 +326,7 @@ th {
           box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
 }
 
-.card-wide a {
+.card-wide a, .card-wide section, .card-wide footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,7 +571,7 @@ img {
   color: #00509d;
 }
 
-.rrss a {
+.rrss a, .rrss section, .rrss footer {
   padding: 0rem 0.4rem 0rem 0.4rem;
 }
 
@@ -608,7 +591,7 @@ img {
   width: 0.8rem;
 }
 
-.bluni-color a {
+.bluni-color a, .bluni-color section, .bluni-color footer {
   font-weight: 600;
   color: #303030;
 }
@@ -680,7 +663,7 @@ img {
   .card-wide {
     padding: 0.2rem;
   }
-  .card-wide a {
+  .card-wide a, .card-wide section, .card-wide footer {
     display: inline;
   }
   .content-card {
@@ -778,7 +761,7 @@ img {
   .card-wide {
     padding: 1.2rem;
   }
-  .card-wide a {
+  .card-wide a, .card-wide section, .card-wide footer {
     display: inline;
   }
   .footer-box {

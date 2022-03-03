@@ -29,19 +29,16 @@ body {
 	animation: fadeIn;
 	animation-duration: 1.2s;
 }
+a {
+	text-decoration: none !important;
+	color: map-get($map: $color, $key: gray-dark) !important;
+	cursor: pointer;
+}
 section {
-	a {
-		text-decoration: none !important;
-		color: map-get($map: $color, $key: gray-dark) !important;
-		cursor: pointer;
-	}
+	@extend a;
 }
 footer {
-	a {
-		text-decoration: none !important;
-		color: map-get($map: $color, $key: gray-dark) !important;
-		cursor: pointer;
-	}
+	@extend a;
 	background-color: map-get($map: $color, $key: light);
 	padding: 4rem 0rem 4rem 0rem;
 	border-top-left-radius: 6rem;
@@ -179,51 +176,47 @@ nav {
 	font-size: 12px;
 	font-weight: $normal;
 }
+.button {
+	width: 100%;
+	border-radius: 0.8rem;
+	font-weight: 600;
+	appearance: none;
+	cursor: pointer;
+}
 .button-primary {
 	a {
 		text-decoration: none;
 		color: map-get($map: $color, $key: light)!important;
 	}
-	width: 100%;
+	@extend .button;
 	height: 3.25rem;
-	appearance: none;
+	font-size: 1.3rem;
 	background: map-get($map: $color, $key: primary);
 	border: 0.0063rem solid rgba(36, 36, 36, 0.007);
 	color: map-get($map: $color, $key: light);
-	border-radius: 0.8rem;
-	font-weight: 600;
-	font-size: 100%;
-	cursor: pointer;
 	&:hover {
 		background: #00509d;
 	}
 }
 .button-secondary {
-	width: 100%;
+	@extend .button;
 	height: 3.25rem;
-	appearance: none;
+	font-size: 1.3rem;
 	background: rgba(255, 255, 255, 0);
 	border: 0rem solid #ffffff00;
 	color: map-get($map: $color, $key: primary);
-	border-radius: 0.5rem;
-	font-weight: 600;
-	font-size: 1.3rem;
-	cursor: pointer;
 	&:hover {
 		color: #00509d;
 	}
 }
 .button-secondary-small {
-	width: 100%;
+	@extend .button;
 	height: 2rem;
-	appearance: none;
 	background: rgba(255, 255, 255, 0);
 	border: 0.1rem solid map-get($map: $color, $key: primary);
 	color: map-get($map: $color, $key: primary);
-	border-radius: 0.5rem;
-	font-weight: 600;
 	font-size: 1rem;
-	cursor: pointer;
+
 	&:hover {
 		background: map-get($map: $color, $key: primary);
 		color: map-get($map: $color, $key: light);
