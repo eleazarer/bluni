@@ -15,7 +15,6 @@ $color: (
 @mixin cards {
 	padding: 2rem;
 	border-radius: 1rem;
-	text-align: center;
 	overflow: hidden;
 	background-color: map-get($map: $color, $key: light);	
 }
@@ -346,6 +345,7 @@ th {
 }
 .card-product {
 	@include cards;
+	text-align: center;
 	transition: box-shadow, transform, 0.2s;
 	cursor: pointer;
 	img {
@@ -362,6 +362,7 @@ th {
 }
 .card-store {
 	@include cards;
+	text-align: center;
 	transition: box-shadow, transform, 0.2s;
 	cursor: pointer;
 	img {

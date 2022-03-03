@@ -324,7 +324,6 @@ th {
 .card-wide {
   padding: 2rem;
   border-radius: 1rem;
-  text-align: center;
   overflow: hidden;
   background-color: white;
   background-color: white;
@@ -351,7 +350,6 @@ th {
 .card-mid {
   padding: 2rem;
   border-radius: 1rem;
-  text-align: center;
   overflow: hidden;
   background-color: white;
   background-color: white;
@@ -362,7 +360,6 @@ th {
 .card-features {
   padding: 2rem;
   border-radius: 1rem;
-  text-align: center;
   overflow: hidden;
   background-color: white;
   background-color: white;
@@ -425,7 +422,6 @@ th {
 .card-team {
   padding: 2rem;
   border-radius: 1rem;
-  text-align: center;
   overflow: hidden;
   background-color: white;
 }
@@ -438,9 +434,9 @@ th {
 .card-product {
   padding: 2rem;
   border-radius: 1rem;
-  text-align: center;
   overflow: hidden;
   background-color: white;
+  text-align: center;
   -webkit-transition: 0.2s, -webkit-box-shadow, -webkit-transform;
   transition: 0.2s, -webkit-box-shadow, -webkit-transform;
   transition: box-shadow, transform, 0.2s;
@@ -470,9 +466,9 @@ th {
 .card-store {
   padding: 2rem;
   border-radius: 1rem;
-  text-align: center;
   overflow: hidden;
   background-color: white;
+  text-align: center;
   -webkit-transition: 0.2s, -webkit-box-shadow, -webkit-transform;
   transition: 0.2s, -webkit-box-shadow, -webkit-transform;
   transition: box-shadow, transform, 0.2s;
@@ -502,7 +498,6 @@ th {
 .card-text {
   padding: 2rem;
   border-radius: 1rem;
-  text-align: center;
   overflow: hidden;
   background-color: white;
   margin-left: 1rem;
