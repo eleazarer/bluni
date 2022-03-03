@@ -333,9 +333,12 @@ th {
 }
 
 .card-wide {
-  background-color: white;
   padding: 2rem;
   border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
+  background-color: white;
   -webkit-box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
           box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
 }
@@ -357,17 +360,23 @@ th {
 }
 
 .card-mid {
-  background-color: white;
   padding: 2rem;
   border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
+  background-color: white;
   -webkit-box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
           box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
 }
 
 .card-features {
   padding: 2rem;
-  background-color: white;
   border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
+  background-color: white;
   -webkit-box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
           box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
   display: inline;
@@ -426,9 +435,10 @@ th {
 
 .card-team {
   padding: 2rem;
-  background-color: white;
-  text-align: center;
   border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
 }
 
 .card-team img {
@@ -437,11 +447,11 @@ th {
 }
 
 .card-product {
-  background-color: white;
-  padding: 1rem;
-  text-align: center;
+  padding: 2rem;
   border-radius: 1rem;
+  text-align: center;
   overflow: hidden;
+  background-color: white;
   -webkit-transition: 0.2s, -webkit-box-shadow, -webkit-transform;
   transition: 0.2s, -webkit-box-shadow, -webkit-transform;
   transition: box-shadow, transform, 0.2s;
@@ -469,11 +479,11 @@ th {
 }
 
 .card-store {
-  background-color: white;
   padding: 2rem;
-  text-align: center;
   border-radius: 1rem;
+  text-align: center;
   overflow: hidden;
+  background-color: white;
   -webkit-transition: 0.2s, -webkit-box-shadow, -webkit-transform;
   transition: 0.2s, -webkit-box-shadow, -webkit-transform;
   transition: box-shadow, transform, 0.2s;
@@ -491,7 +501,7 @@ th {
 }
 
 .card-store:hover {
-  background-color: white;
+  background-color: #fdfdfd;
   -webkit-transform: translateY(-4px);
           transform: translateY(-4px);
   -webkit-transition: -webkit-transform .2s;
@@ -501,10 +511,11 @@ th {
 }
 
 .card-text {
-  padding: 4rem;
-  background-color: white;
-  text-align: center;
+  padding: 2rem;
   border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
   margin-left: 1rem;
   margin-right: 1rem;
 }
