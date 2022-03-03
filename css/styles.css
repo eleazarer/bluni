@@ -20,7 +20,7 @@ section a {
 }
 
 footer {
-  background-color: #ffffff;
+  background-color: white;
   padding: 4rem 0rem 4rem 0rem;
   border-top-left-radius: 6rem;
   border-top-right-radius: 6rem;
@@ -101,7 +101,7 @@ nav {
   border-radius: 0rem 0rem 6rem 6rem;
   background-image: url(../image/hero-home-2.jpg);
   background-position: 80% 50%;
-  background-color: #ffffff;
+  background-color: white;
   -webkit-box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
           box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
   background-size: 34%;
@@ -156,7 +156,7 @@ nav {
 }
 
 .white-color {
-  color: #ffffff;
+  color: white;
 }
 
 .black-color {
@@ -208,24 +208,27 @@ nav {
   font-weight: 400;
 }
 
-.button-primary {
+.button, .button-primary, .button-secondary, .button-secondary-small {
   width: 100%;
-  height: 3.25rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  cursor: pointer;
+}
+
+.button-primary {
+  height: 3.25rem;
+  font-size: 1.3rem;
   background: #005ccc;
   border: 0.0063rem solid rgba(36, 36, 36, 0.007);
-  color: #ffffff;
-  border-radius: 0.8rem;
-  font-weight: 600;
-  font-size: 100%;
-  cursor: pointer;
+  color: white;
 }
 
 .button-primary a {
   text-decoration: none;
-  color: #ffffff !important;
+  color: white !important;
 }
 
 .button-primary:hover {
@@ -233,18 +236,11 @@ nav {
 }
 
 .button-secondary {
-  width: 100%;
   height: 3.25rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  font-size: 1.3rem;
   background: rgba(255, 255, 255, 0);
   border: 0rem solid #ffffff00;
   color: #005ccc;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  font-size: 1.3rem;
-  cursor: pointer;
 }
 
 .button-secondary:hover {
@@ -252,23 +248,16 @@ nav {
 }
 
 .button-secondary-small {
-  width: 100%;
   height: 2rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   background: rgba(255, 255, 255, 0);
   border: 0.1rem solid #005ccc;
   color: #005ccc;
-  border-radius: 0.5rem;
-  font-weight: 600;
   font-size: 1rem;
-  cursor: pointer;
 }
 
 .button-secondary-small:hover {
   background: #005ccc;
-  color: #ffffff;
+  color: white;
 }
 
 .flex {
@@ -285,7 +274,7 @@ table {
   table-layout: fixed;
   border-collapse: collapse;
   border: 0rem solid #2c2c2c;
-  background: #ffffff;
+  background: white;
   border-radius: 1rem;
 }
 
@@ -321,11 +310,11 @@ th {
 }
 
 .fa-check-circle {
-  color: #2C9E4B;
+  color: #2c9e4b;
 }
 
 .fa-times-circle {
-  color: #F56565;
+  color: #f56565;
 }
 
 .table-price {
@@ -333,9 +322,12 @@ th {
 }
 
 .card-wide {
-  background-color: #ffffff;
   padding: 2rem;
   border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
+  background-color: white;
   -webkit-box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
           box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
 }
@@ -357,17 +349,23 @@ th {
 }
 
 .card-mid {
-  background-color: #ffffff;
   padding: 2rem;
   border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
+  background-color: white;
   -webkit-box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
           box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
 }
 
 .card-features {
   padding: 2rem;
-  background-color: #ffffff;
   border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
+  background-color: white;
   -webkit-box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
           box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
   display: inline;
@@ -381,7 +379,7 @@ th {
 .icon {
   padding: 1rem;
   border-radius: 1rem;
-  color: #ffffff;
+  color: white;
 }
 
 .fa-star-of-life {
@@ -397,38 +395,39 @@ th {
 }
 
 .fa-laugh-beam {
-  background-color: #FFB600;
+  background-color: #ffb600;
 }
 
 .fa-heart {
-  background-color: #F56565;
+  background-color: #f56565;
 }
 
 .fa-globe-americas {
-  background-color: #2C9E4B;
+  background-color: #2c9e4b;
 }
 
 .fa-leaf {
-  background-color: #2C9E4B;
+  background-color: #2c9e4b;
 }
 
 .fa-star {
-  background-color: #FFB600;
+  background-color: #ffb600;
 }
 
 .fa-seedling {
-  color: #2C9E4B;
+  color: #2c9e4b;
 }
 
 .fa-lemon {
-  color: #FFB600;
+  color: #ffb600;
 }
 
 .card-team {
   padding: 2rem;
-  background-color: #ffffff;
-  text-align: center;
   border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
 }
 
 .card-team img {
@@ -437,11 +436,11 @@ th {
 }
 
 .card-product {
-  background-color: #ffffff;
-  padding: 1rem;
-  text-align: center;
+  padding: 2rem;
   border-radius: 1rem;
+  text-align: center;
   overflow: hidden;
+  background-color: white;
   -webkit-transition: 0.2s, -webkit-box-shadow, -webkit-transform;
   transition: 0.2s, -webkit-box-shadow, -webkit-transform;
   transition: box-shadow, transform, 0.2s;
@@ -469,11 +468,11 @@ th {
 }
 
 .card-store {
-  background-color: #ffffff;
   padding: 2rem;
-  text-align: center;
   border-radius: 1rem;
+  text-align: center;
   overflow: hidden;
+  background-color: white;
   -webkit-transition: 0.2s, -webkit-box-shadow, -webkit-transform;
   transition: 0.2s, -webkit-box-shadow, -webkit-transform;
   transition: box-shadow, transform, 0.2s;
@@ -501,10 +500,11 @@ th {
 }
 
 .card-text {
-  padding: 4rem;
-  background-color: #ffffff;
-  text-align: center;
+  padding: 2rem;
   border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -611,7 +611,7 @@ img {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.4))), url(/image/hero-home.jpg);
     background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4)), url(/image/hero-home.jpg);
     background-position: 50% 70%;
-    background-color: #ffffff;
+    background-color: white;
     -webkit-box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
             box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
     background-size: cover;
@@ -715,7 +715,7 @@ img {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.4))), url(/image/hero-home.jpg);
     background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4)), url(/image/hero-home.jpg);
     background-position: 88% 50%;
-    background-color: #ffffff;
+    background-color: white;
     -webkit-box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
             box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
     background-size: cover;

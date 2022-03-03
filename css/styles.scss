@@ -1,39 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-$bluni: #FFB600;
-$primary: #005ccc;
-$critical: #F56565;
-$success: #2C9E4B;
-$decorative-1:#5c0099;
-$decorative-2: #06837f;
-$white: #ffffff;
-$gray-dark:#1d1d1d;
-$background:#f7f7f7;
 $bold: 600;
 $normal: 400;
+$color: (
+	'bluni': rgb(255, 182, 0),
+    'primary': rgb(0, 92, 204),
+    'critical': rgb(245, 101, 101),
+    'success': rgb(44, 158, 75),
+    'decorative-1':rgb(92, 0, 153),
+    'decorative-2': rgb(6, 131, 127),
+    'light': rgb(255, 255, 255),
+    'gray-dark':#1d1d1d,
+    'back':rgb(247, 247, 247),
+);
+@mixin cards {
+	padding: 2rem;
+	border-radius: 1rem;
+	text-align: center;
+	overflow: hidden;
+	background-color: map-get($map: $color, $key: light);	
+}
 * {
     margin: 0%;
     padding: 0%;
 }
 body {
 	font-family: 'Inter', sans-serif !important;
-	background-color: $background !important;
+	background-color: map-get($map: $color, $key: back) !important;
 	animation: fadeIn;
 	animation-duration: 1.2s;
 }
+
 section {
 	a {
 		text-decoration: none !important;
-		color: $gray-dark !important;
+		color: map-get($map: $color, $key: gray-dark) !important;
 		cursor: pointer;
 	}
 }
 footer {
 	a {
 		text-decoration: none !important;
-		color: $gray-dark !important;
+		color: map-get($map: $color, $key: gray-dark) !important;
 		cursor: pointer;
 	}
-	background-color: $white;
+	background-color: map-get($map: $color, $key: light);
 	padding: 4rem 0rem 4rem 0rem;
 	border-top-left-radius: 6rem;
 	border-top-right-radius: 6rem;
@@ -90,7 +100,7 @@ nav {
 	border-radius: 0rem 0rem 6rem 6rem;
 	background-image: url(../image/hero-home-2.jpg);
 	background-position: 80% 50%;
-	background-color: $white;
+	background-color: map-get($map: $color, $key: light);
 	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.020);
 	background-size: 34%;
 	background-repeat: no-repeat;
@@ -129,10 +139,10 @@ nav {
 	}
 }
 .white-color {
-	color: $white;
+	color: map-get($map: $color, $key: light);
 }
 .black-color {
-	color: $gray-dark;
+	color: map-get($map: $color, $key: gray-dark);
 }
 .title {
 	font-size: 28px;
@@ -170,54 +180,50 @@ nav {
 	font-size: 12px;
 	font-weight: $normal;
 }
+.button {
+	width: 100%;
+	border-radius: 0.5rem;
+	font-weight: 600;
+	appearance: none;
+	cursor: pointer;
+}
 .button-primary {
 	a {
 		text-decoration: none;
-		color: $white !important;
+		color: map-get($map: $color, $key: light)!important;
 	}
-	width: 100%;
+	@extend .button;
 	height: 3.25rem;
-	appearance: none;
-	background: $primary;
+	font-size: 1.3rem;
+	background: map-get($map: $color, $key: primary);
 	border: 0.0063rem solid rgba(36, 36, 36, 0.007);
-	color: $color-white;
-	border-radius: 0.8rem;
-	font-weight: 600;
-	font-size: 100%;
-	cursor: pointer;
+	color: map-get($map: $color, $key: light);
 	&:hover {
 		background: #00509d;
 	}
 }
 .button-secondary {
-	width: 100%;
+	@extend .button;
 	height: 3.25rem;
-	appearance: none;
+	font-size: 1.3rem;
 	background: rgba(255, 255, 255, 0);
 	border: 0rem solid #ffffff00;
-	color: $primary;
-	border-radius: 0.5rem;
-	font-weight: 600;
-	font-size: 1.3rem;
-	cursor: pointer;
+	color: map-get($map: $color, $key: primary);
 	&:hover {
 		color: #00509d;
 	}
 }
 .button-secondary-small {
-	width: 100%;
+	@extend .button;
 	height: 2rem;
-	appearance: none;
 	background: rgba(255, 255, 255, 0);
-	border: 0.1rem solid $primary;
-	color: $primary;
-	border-radius: 0.5rem;
-	font-weight: 600;
+	border: 0.1rem solid map-get($map: $color, $key: primary);
+	color: map-get($map: $color, $key: primary);
 	font-size: 1rem;
-	cursor: pointer;
+
 	&:hover {
-		background: $primary;
-		color: $white;
+		background: map-get($map: $color, $key: primary);
+		color: map-get($map: $color, $key: light);
 	}
 }
 .flex {
@@ -230,7 +236,7 @@ table {
 	table-layout: fixed;
 	border-collapse: collapse;
 	border: 0rem solid#2c2c2c;
-	background: $white;
+	background: map-get($map: $color, $key: light);
 	border-radius: 1rem;
 }
 td {
@@ -259,18 +265,17 @@ th {
 	font-weight: 700;
 }
 .fa-check-circle {
-	color: $success;
+	color: map-get($map: $color, $key: success);
 }
 .fa-times-circle {
-	color: $critical;
+	color: map-get($map: $color, $key: critical);
 }
 .table-price {
 	text-align: center;
 }
 .card-wide {
-	background-color: $white;
-	padding: 2rem;
-	border-radius: 1rem;
+	@include cards;
+	background-color: map-get($map: $color, $key: light);
 	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.020);
 	a {
 		display: flex;
@@ -283,15 +288,13 @@ th {
 	}
 }
 .card-mid {
-	background-color: $white;
-	padding: 2rem;
-	border-radius: 1rem;
+	@include cards;
+	background-color: map-get($map: $color, $key: light);
 	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.020);
 }
 .card-features {
-	padding: 2rem;
-	background-color: $white;
-	border-radius: 1rem;
+	@include cards;
+	background-color: map-get($map: $color, $key: light);
 	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.020);
 	display: inline;
 }
@@ -302,54 +305,47 @@ th {
 .icon {
 	padding: 1rem;
 	border-radius: 1rem;
-	color: $white;
+	color: map-get($map: $color, $key: light);
 }
 .fa-star-of-life {
-	background-color: $decorative-1;
+	background-color: map-get($map: $color, $key: decorative-1);
 }
 .fa-piggy-bank {
-	background-color: $decorative-2;
+	background-color: map-get($map: $color, $key: decorative-2);
 }
 .fa-shopping-basket {
-	background-color: $decorative-2;
+	background-color: map-get($map: $color, $key: decorative-2);
 }
 .fa-laugh-beam {
-	background-color: $bluni;
+	background-color: map-get($map: $color, $key: bluni);
 }
 .fa-heart {
-	background-color: $critical;
+	background-color: map-get($map: $color, $key: critical);
 }
 .fa-globe-americas {
-	background-color: $success;
+	background-color: map-get($map: $color, $key: success);
 }
 .fa-leaf {
-	background-color: $success;
+	background-color: map-get($map: $color, $key: success);
 }
 .fa-star {
-	background-color: $bluni;
+	background-color: map-get($map: $color, $key: bluni);
 }
 .fa-seedling {
-	color: $success;
+	color: map-get($map: $color, $key: success);
 }
 .fa-lemon {
-	color: $bluni;
+	color: map-get($map: $color, $key: bluni);
 }
 .card-team {
-	padding: 2rem;
-	background-color: $white;
-	text-align: center;
-	border-radius: 1rem;
+	@include cards;
 	img {
 		width: 12rem;
 		height: 12rem;
 	}
 }
 .card-product {
-	background-color: $white;
-	padding: 1rem;
-	text-align: center;
-	border-radius: 1rem;
-	overflow: hidden;
+	@include cards;
 	transition: box-shadow, transform, 0.2s;
 	cursor: pointer;
 	img {
@@ -365,11 +361,7 @@ th {
 	}
 }
 .card-store {
-	background-color: $white;
-	padding: 2rem;
-	text-align: center;
-	border-radius: 1rem;
-	overflow: hidden;
+	@include cards;
 	transition: box-shadow, transform, 0.2s;
 	cursor: pointer;
 	img {
@@ -385,10 +377,7 @@ th {
 	}
 }
 .card-text {
-	padding: 4rem;
-	background-color: $white;
-	text-align: center;
-	border-radius: 1rem;
+	@include cards;
 	margin-left: 1rem;
 	margin-right: 1rem;
 	.fa-seedling {
@@ -470,7 +459,7 @@ img {
 		border-radius: 2rem;
 		background-image: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.4)), url(/image/hero-home.jpg);
 		background-position: 50% 70%;
-		background-color: $color-white;
+		background-color: map-get($map: $color, $key: light);
 		box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.020);
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -556,7 +545,7 @@ img {
 		border-radius: 2rem;
 		background-image: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.4)), url(/image/hero-home.jpg);
 		background-position: 88% 50%;
-		background-color: $color-white;
+		background-color: map-get($map: $color, $key: light);
 		box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.020);
 		background-size: cover;
 		background-repeat: no-repeat;
