@@ -293,6 +293,7 @@ th {
 }
 .card-features {
 	@include cards;
+	text-align: center;
 	background-color: map-get($map: $color, $key: light);
 	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.020);
 	display: inline;
@@ -381,6 +382,7 @@ th {
 	@include cards;
 	margin-left: 1rem;
 	margin-right: 1rem;
+	text-align: center;
 	.fa-seedling {
 		display: flex;
 		justify-content: center;
