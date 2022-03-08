@@ -605,8 +605,8 @@ img {
   }
   .hero-background-home {
     border-radius: 2rem;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.4))), url(/image/hero-home.jpg);
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4)), url(/image/hero-home.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.4))), url(/image/hero-home-2.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4)), url(/image/hero-home-2.jpg);
     background-position: 50% 70%;
     background-color: white;
     -webkit-box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
@@ -709,8 +709,8 @@ img {
   }
   .hero-background-home {
     border-radius: 2rem;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.4))), url(/image/hero-home.jpg);
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4)), url(/image/hero-home.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.4))), url(/image/hero-home-2.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4)), url(/image/hero-home-2.jpg);
     background-position: 88% 50%;
     background-color: white;
     -webkit-box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.02);
